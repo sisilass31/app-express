@@ -1,15 +1,49 @@
 <%- include('components/navbar.ejs') %>
-<div class="container_sign_up">
-    <form action="/inscrire" method="post">
-        <h1>s'inscrire</h1>
-        <p class="choose-email">ou utiliser mon adresse e-mail :</p>
-        <div class="inputs">
-            <input type="email" placeholder="email" name="email">
-            <input type="password" placeholder="mot de passe" name="mdp">
+<div class="container">
+    <form action="/inscrire" method="post" class="form-sign">
+        <div class="title-contact">
+            <h4 class="br-25 fs-14">Sign in</h4>
+            <h2>Welcome back</h2>
         </div>
-        <p class="inscription">j'ai un compte, je me <span> <a href="/connecter">connecte</a> </span></p>
-        <div class="inscrire">
-            <button type="submit">s'inscrire</button>
+        <div class="container-form">
+            <div class="input br-8">
+                <input type="text" placeholder="First name" name="firstname">
+            </div>
+            <div class="input br-8">
+                <input type="text" placeholder="Last name" name="lastname">
+            </div>
+            <div class="input br-8">
+                <input type="email" placeholder="Email" name="email">
+            </div>
+            <div class="input br-8">
+                <input type="password" placeholder="Password" name="mdp">
+                <i class="fa-solid fa-eye"></i>
+            </div>
+            <div class="input br-8">
+                <input type="password" placeholder="Confirm your password" name="mdp">
+                <i class="fa-solid fa-eye"></i>
+            </div>
+            <div class="options">
+                <div class="or">
+                    <hr>
+                    <p>or</p>
+                    <hr>
+                </div>
+                <div class="with-google br-8">
+                    <div class="logo-google">
+                        <img src="../img/google.png" alt="google">
+                    </div>
+                    <p>Connect with Google</p>
+                </div>
+            </div>
+            <div class="no-account">
+                <p class="inscription">You have an account? Connect <span> <a
+                            href="/inscrire">here</a></span>
+                </p>
+            </div>
+            <div class="se-connecter send">
+                <button type="submit" class="button button-primary">Sign in</button>
+            </div>
         </div>
     </form>
 </div>
