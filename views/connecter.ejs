@@ -1,0 +1,42 @@
+<%- include('components/navbar.ejs') %>
+    <div class="container">
+        <form action="/connecter" method="post" class="form-sign">
+            <div class="title-contact">
+                <h4 class="br-25 fs-14">Sign up</h4>
+                <h2>Join our community</h2>
+            </div>
+            <div class="container-form">
+                <div class="options">
+                    <div class="with-google br-25">
+                        <div class="logo-google">
+                            <img src="../img/google.png" alt="google">
+                        </div>
+                        <p>Connect with Google</p>
+                    </div>
+                    <div class="or">
+                        <hr>
+                        <p>or</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="input br-8">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="email" name="email">
+                </div>
+                <div class="input br-8">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="password" name="mdp">
+                </div>
+                <div class="no-account">
+                    <p class="inscription">You don't have an account? Create one <span> <a
+                                href="/inscrire">here</a></span>
+                    </p>
+                </div>
+                <div class="se-connecter send">
+                    <button type="submit" class="button-primary">Sign in</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <%- include('components/footer.ejs') %>

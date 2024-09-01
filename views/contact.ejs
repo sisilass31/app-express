@@ -1,0 +1,90 @@
+<%- include('components/navbar.ejs') %>
+    
+        <div class="container-contact">
+            <div class="container">
+                <div class="title-contact">
+                    <h4 class="br-25 fs-14">Contact us</h4>
+                    <h2>We'd love to hear from you</h2>
+                </div>
+                <div class="contact-box-container">
+                    <div class="contact-box br-8">
+                        <div class="logo-contact">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="text-contact-box fs-14">
+                            <h4>Chat to sales</h4>
+                            <p>Speak to our friendly team</p>
+                            <p><strong>example@gmail.com</strong></p>
+                        </div>
+                    </div>
+                    <div class="contact-box br-8">
+                        <div class="logo-contact">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="text-contact-box fs-14">
+                            <h4>Chat to sales</h4>
+                            <p>Speak to our friendly team</p>
+                            <p><strong>example@gmail.com</strong></p>
+                        </div>
+                    </div>
+                    <div class="contact-box br-8">
+                        <div class="logo-contact">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="text-contact-box fs-14">
+                            <h4>Chat to sales</h4>
+                            <p>Speak to our friendly team</p>
+                            <p><strong>example@gmail.com</strong></p>
+                        </div>
+                    </div>
+                    <div class="contact-box br-8">
+                        <div class="logo-contact">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="text-contact-box fs-14">
+                            <h4>Chat to sales</h4>
+                            <p>Speak to our friendly team</p>
+                            <p><strong>example@gmail.com</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="/contact" class="contact-form" method="post">
+                <div class="title-contact">
+                    <h2>Get in touch</h2>
+                    <p>Chat to our friendly team</p>
+                </div>
+                <div class="container-form">
+                    <div class="input-contact">
+                        <div class="input-block">
+                            <label for="">First name</label>
+                            <input type="text" class="input br-8" name="prenom" placeholder="First name">
+                        </div>
+                    </div>
+                    <div class="input-contact">
+                        <div class="input-block">
+                            <label for="">Last name</label>
+                            <input type="text" class="input br-8" name="nom" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="input-contact">
+                        <div class="input-block">
+                            <label for="">Email</label>
+                            <input type="text" class="input br-8" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="input-contact">
+                        <div class="input-block">
+                            <label for="">Your message</label>
+                            <textarea placeholder="Saisissez ici..." class="input br-8" name="message"></textarea>
+                        </div>
+                    </div>
+                    <div class="input-contact send">
+                        <button class="button button-primary">Send message</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+    <%- include('components/footer.ejs') %>
