@@ -148,6 +148,31 @@ textarea {
 
 /*navbar*/
 
+/*accueil*/
+
+.home-container {
+  height: calc(100vh - 80px);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.description h1 {
+  font-size: 40px;
+}
+
+.lorem {
+  max-width: 745px;
+  text-align: center;
+}
+
+/*accueil*/
+
 /*contact*/
 
 .title-contact {
@@ -244,6 +269,12 @@ textarea {
   gap: 15px;
   background-color: var(--light-grey);
   cursor: pointer;
+  width: 55%;
+  justify-content: center;
+}
+
+.with-google:hover {
+  background-color: var(--grey);
 }
 
 .logo-google {
