@@ -95,6 +95,10 @@ i {
   font-size: 14px;
 }
 
+.mx-24 {
+  margin: 0px 24px;
+}
+
 .mt-50 {
   margin-top: 50px;
 }
@@ -119,20 +123,52 @@ i {
 
 /* Sidebar */
 
-.sidebar {
+.sidebar-container {
   width: 280px;
   height: 100vh;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 4px;
-  padding: 25px;
   position: fixed;
   left: 0;
   z-index: 1000;
+  display: grid;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-links li a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 24px;
+}
+
+.sidebar-links li a i {
+  width: 18px;
+}
+
+.sidebar-links li a:hover {
+  background-color: var(--light-green);
+}
+
+.account-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 
 .title {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 13px;
+  height: 80px;
 }
 
 .title h2 {
@@ -140,14 +176,61 @@ i {
 }
 
 .logo {
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   opacity: 0.8;
 }
 
 .logo img {
   width: 100%;
 }
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--grey);
+  padding: 8px 15px;
+  font-size: 15px;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 16px;
+  margin: 22px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.account:hover {
+  background-color: var(--grey);
+}
+
+.img-account {
+  font-size: 38px;
+}
+
+.name-account p {
+  font-size: 12px;
+}
+
+.more i {
+  font-size: 18px;
+}
+
+.post-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  margin-top: 25px;
+  font-weight: 500;
+}
+
+/* sidebar */
 
 /* Navbar */
 
@@ -198,7 +281,7 @@ main {
 footer {
   margin-left: 280px;
   width: calc(100% - 280px);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 5px 0px 4px;
   background-color: var(--white);
   display: flex;
   flex-direction: column;
@@ -285,16 +368,15 @@ footer hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1100px;
+  max-width: 995px;
   width: 100%;
   margin: 35px auto 0;
-  gap: 20px;
 }
 
 .contact-box {
-  width: 250px;
+  width: 220px;
+  height: 220px;
   padding: 28px;
-  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

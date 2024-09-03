@@ -12,31 +12,35 @@
 </head>
 
 <body>
-        <header>
-            <nav>
+    <header>
+        <nav>
+            <div class="sidebar-container">
                 <div class="sidebar">
-                    <div>
-                        <a href="/">
-                            <div class="title">
-                                <div class="logo">
-                                    <img src="/img/logo.png" alt="logo">
-                                </div>
-                                <h2>Weavely</h2>
+                    <a href="/">
+                        <div class="title mx-24">
+                            <div class="logo">
+                                <img src="/img/logo.png" alt="logo">
                             </div>
-                        </a>
-                        <div class="searchbar">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="search">
+                            <h2>Weavely</h2>
                         </div>
-                        <div class="sidebar-links-container">
-                            <ul class="sidebar-links">
-                                <li>Explore</li>
-                                <li>Saved</li>
-                                <li>Settings</li>
-                                <li>Log out</li>
-                            </ul>
-                        </div>
+                    </a>
+                    <div class="sidebar-links-container">
+                        <ul class="sidebar-links">
+                            <li><a href="/"><i class="fa-solid fa-house"></i>Home</a></li>
+                            <li><a href="#"><i class="fa-solid fa-compass"></i>Explore</a></li>
+                            <li><a href="#"><i class="fa-solid fa-bookmark"></i>Saved</a></li>
+                            <li><a href="#"><i class="fa-solid fa-bell"></i>Notifications</a></li>
+                            <li><a href="#"><i class="fa-solid fa-users"></i>About Us</a></li>
+                            <li><a href="/contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+                            <li><a href="#"><i class="fa-solid fa-gear"></i>Settings</a></li>
+                            <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i>Log out</a></li>
+                        </ul>
                     </div>
+                    <div class="post-button button-primary mx-24">
+                        <a href="#">Post</a>
+                    </div>
+                </div>
+                <div class="account-container">
                     <div class="account">
                         <div class="img-account">
                             <i class="fa-solid fa-circle-user"></i>
@@ -45,22 +49,23 @@
                             <h4>Sihem Lassar</h4>
                             <p>sihemlassar@gmail.com</p>
                         </div>
+                        <div class="more">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </header>
-
-        <main>
-            <div class="navbar">
-                <ul class="navlinks">
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">News & Blogs</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-                <div class="buttons">
-                    <a href="/connecter" class="button-primary">Sign in</a>
-                    <a href="/inscrire" class="button-secondary">Sign up</a>
-                </div>
             </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="navbar">
+            <div class="searchbar br-8">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search">
+            </div>
+            <div class="buttons">
+                <a href="/connecter" class="button-primary">Sign in</a>
+                <a href="/inscrire" class="button-secondary">Sign up</a>
+            </div>
+        </div>
