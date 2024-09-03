@@ -6,7 +6,7 @@ Weavely est un réseau social en cours de développement où les utilisateurs pe
 
 ## Screenshot
 
-![alt text](https://github.com/sisilass31/tasty/blob/main/assets/images/tasty.png?raw=true)
+![alt text](https://github.com/sisilass31/weavely/blob/main/assets/img/weavely.png?raw=true)
 
 ## Fonctionnalités Primaires
 
